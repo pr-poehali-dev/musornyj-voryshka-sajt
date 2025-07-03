@@ -98,7 +98,9 @@ const Pricing = () => {
                 <div className="text-3xl font-bold text-green-600 mb-2">
                   {tariff.price} ₽
                 </div>
-                <p className="text-gray-600 text-sm">{tariff.description}</p>
+                <div className="text-gray-600 text-sm whitespace-pre-line">
+                  {tariff.description}
+                </div>
               </CardHeader>
 
               <CardContent className="space-y-4">
