@@ -2,30 +2,31 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const Services = () => {
-  const services = [
+  const targetAudience = [
     {
-      icon: "🗑️",
-      title: "Стандартный мусор",
-      description: "Бытовые отходы, упаковка, пищевые остатки",
-      features: ["До 2 пакетов", "Быстрая уборка", "Аккуратно"],
+      icon: "🚀",
+      description:
+        "Для тех, у кого горят дедлайны, а для мусора не осталось времени. Может просто ленивые, но мы не осуждаем.",
     },
     {
-      icon: "📦",
-      title: "Крупногабаритный",
-      description: "Коробки, старая мебель, техника",
-      features: ["Любые размеры", "Безопасно", "С разборкой"],
+      icon: "🤴",
+      description:
+        "Для парочек, где надо успеть поработать и посмотреть сериал, а мусор сам не телепортируется в мусорный контейнер.",
     },
     {
-      icon: "♻️",
-      title: "Раздельный сбор",
-      description: "Сортировка по типам для переработки",
-      features: ["Экологично", "Сортировка", "Ответственно"],
+      icon: "👨‍👩‍👧‍👦",
+      description:
+        "Для семьи, где есть дети, но они еще маленькие, чтобы вынести мусор или родители не умеют заставлять.",
     },
     {
-      icon: "🧹",
-      title: "Генеральная уборка",
-      description: "Полная очистка от накопившегося мусора",
-      features: ["Весь мусор", "Глубокая уборка", "Результат"],
+      icon: "👵",
+      description:
+        "Для бабушек, которые сильнее пакета с отходами, но не обязаны это доказывать. Оставьте время для посиделок на скамейке во дворе.",
+    },
+    {
+      icon: "♿️",
+      description:
+        "Для тех, кому сложно дойти до контейнера – но легко позвонить нам. Маломобильные граждане у нас в приоритете.",
     },
   ];
 
@@ -38,38 +39,24 @@ const Services = () => {
             <span className="text-green-600">теперь наша проблема</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Еноты-профессионалы справятся с любым мусором! Выбирайте подходящий
-            тариф
+            Еноты-профессионалы справятся с любым мусором! Мы понимаем ваши
+            потребности
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {targetAudience.map((audience, index) => (
             <Card
               key={index}
               className="hover:shadow-lg transition-shadow cursor-pointer group"
             >
-              <CardHeader className="text-center">
+              <CardContent className="text-center p-6">
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">
-                  {service.icon}
+                  {audience.icon}
                 </div>
-                <CardTitle className="text-xl text-gray-800">
-                  {service.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <div className="space-y-2">
-                  {service.features.map((feature, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center justify-center text-sm text-green-600"
-                    >
-                      <Icon name="Check" size={16} className="mr-2" />
-                      {feature}
-                    </div>
-                  ))}
-                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  {audience.description}
+                </p>
               </CardContent>
             </Card>
           ))}
