@@ -51,10 +51,67 @@ const WhyRaccoons = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Почему именно <span className="text-purple-600">еноты</span>?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Еноты - природные эксперты по "воровству" мусора! Теперь они делают
             это легально и профессионально 🦝
           </p>
+
+          <div className="max-w-4xl mx-auto mb-12">
+            <h3 className="text-2xl font-bold mb-8 text-purple-700">
+              Краткая история человеческой лени и мусора (или почему еноты
+              пришли так поздно?)
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-400">
+                <div className="flex items-start mb-3">
+                  <span className="text-2xl mr-3">🏛️</span>
+                  <h4 className="font-bold text-amber-800">Древняя Греция</h4>
+                </div>
+                <p className="text-amber-700 text-sm leading-relaxed">
+                  Философы спорили о смысле жизни, но никто не хотел выносить
+                  объедки с симпозиума. «Пусть рабы носят!» – и так появилась
+                  первая аутсорсинговая услуга.
+                </p>
+              </div>
+
+              <div className="bg-stone-50 p-6 rounded-lg border-l-4 border-stone-400">
+                <div className="flex items-start mb-3">
+                  <span className="text-2xl mr-3">🏰</span>
+                  <h4 className="font-bold text-stone-800">Средние века</h4>
+                </div>
+                <p className="text-stone-700 text-sm leading-relaxed">
+                  Рыцари бились за честь дам, но никто не хотел таскать вонючие
+                  отходы из замка. «Пусть крестьяне разбираются!» – и так
+                  родился феодальный мусорный сервис.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+                <div className="flex items-start mb-3">
+                  <span className="text-2xl mr-3">🏭</span>
+                  <h4 className="font-bold text-gray-800">XX век</h4>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Человечество изобрело телевидение, интернет и доставку еды, но
+                  выносить мусор всё равно было лень. «Может, само исчезнет?» –
+                  но нет.
+                </p>
+              </div>
+
+              <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-400">
+                <div className="flex items-start mb-3">
+                  <span className="text-2xl mr-3">🚀</span>
+                  <h4 className="font-bold text-purple-800">2020-е</h4>
+                </div>
+                <p className="text-purple-700 text-sm leading-relaxed">
+                  Наконец-то прогресс дошел и до этого! Больше не нужно
+                  откладывать пакет до «после сериала» или ждать, пока сосед
+                  догадается его выбросить. На помощь к нам пришли еноты!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -82,7 +139,7 @@ const WhyRaccoons = () => {
           <div className="inline-flex items-center bg-green-100 px-6 py-3 rounded-full">
             <Icon name="Heart" size={20} className="text-green-600 mr-2" />
             <span className="text-green-800 font-semibold">
-              Еноты - лучшие помощники в борьбе с мусором!
+              Еноты пришли, чтобы решить проблему раз и навсегда!
             </span>
           </div>
         </div>
