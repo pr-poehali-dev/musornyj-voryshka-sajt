@@ -5,33 +5,47 @@ const HowItWorks = () => {
   const steps = [
     {
       number: 1,
-      icon: "Phone",
-      title: "Звоните или пишите",
-      description: "Свяжитесь с нами любым удобным способом и опишите задачу",
+      icon: "CreditCard",
+      title: "Выбираете тариф",
+      description: "Выбираете удобный Вам тарифный план – подписка на месяц",
     },
     {
       number: 2,
-      icon: "Calendar",
-      title: "Назначаем время",
-      description: "Выбираем удобное время для вывоза мусора",
+      icon: "Wallet",
+      title: "Оплачиваете",
+      description: "Оплачиваете удобным для вас способом",
     },
     {
       number: 3,
-      icon: "Car",
-      title: "Еноты приезжают",
-      description: "Наши еноты-курьеры прибывают точно в назначенное время",
+      icon: "Package",
+      title: "Получаете пакеты",
+      description:
+        "Мы приносим специализированные мусорные пакеты на время месячной подписки",
     },
     {
       number: 4,
-      icon: "Trash2",
-      title: "Забираем мусор",
-      description: "Аккуратно выносим мусор от двери до контейнера",
+      icon: "MessageCircle",
+      title: "Добавляем в чат-бот",
+      description: "Добавляем Вас в удобный чат-бот в Telegram или WhatsApp",
     },
     {
       number: 5,
-      icon: "CheckCircle",
-      title: "Готово!",
-      description: "Мусор вывезен, вы свободны от хлопот!",
+      icon: "Calendar",
+      title: "Отмечаете дни",
+      description: "В чат-боте отмечаете дни, когда вам нужно вынести мусор",
+    },
+    {
+      number: 6,
+      icon: "Home",
+      title: "Оставляете мусор",
+      description: "Оставляете мусор в специальных пакетах возле двери",
+    },
+    {
+      number: 7,
+      icon: "Truck",
+      title: "Курьер забирает",
+      description:
+        "Курьер в маске енота в течение часа забирает Ваш пакет и выносит до ближайшего мусорного контейнера",
     },
   ];
 
@@ -43,11 +57,11 @@ const HowItWorks = () => {
             Как мы <span className="text-green-600">работаем</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Простой процесс в 5 шагов - и ваш мусор больше не проблема!
+            Простой процесс в 7 шагов - и ваш мусор больше не проблема!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7 gap-4">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <Card className="w-full h-48 hover:shadow-lg transition-shadow mb-4">
