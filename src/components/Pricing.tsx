@@ -46,6 +46,21 @@ const Pricing = () => {
       ],
       popular: false,
     },
+    {
+      name: "Бизнес",
+      price: "600",
+      emoji: "🏢",
+      description: "Для офисов и предприятий",
+      features: [
+        "Офисы и торговые точки",
+        "Вывоз документов на утилизацию",
+        "Регулярное обслуживание",
+        "Работа по договору",
+        "Отчётность и документооборот",
+        "Специальные условия для оптовиков",
+      ],
+      popular: false,
+    },
   ];
 
   return (
@@ -63,7 +78,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {tariffs.map((tariff, index) => (
             <Card
               key={index}
