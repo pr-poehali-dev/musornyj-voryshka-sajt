@@ -137,19 +137,6 @@ const Pricing = () => {
               Все цены указаны окончательно, без доплат!
             </span>
           </div>
-
-          <div className="mt-8 p-6 bg-green-50 rounded-lg border-2 border-green-200 max-w-md mx-auto">
-            <h3 className="text-lg font-bold text-green-800 mb-2">
-              💡 Рекомендуем:
-            </h3>
-            <p className="text-green-700 font-bold text-lg">
-              Парный забег - самый популярный тариф
-            </p>
-            <p className="text-green-600 text-sm mt-1">
-              Оптимальное соотношение цены и возможностей для большинства
-              клиентов
-            </p>
-          </div>
         </div>
       </div>
     </section>
