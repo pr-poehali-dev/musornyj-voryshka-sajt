@@ -1,12 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import WhyRaccoons from "@/components/WhyRaccoons";
+import HowItWorks from "@/components/HowItWorks";
+import Pricing from "@/components/Pricing";
+import ContactForm from "@/components/ContactForm";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-purple-50">
+      <Navigation />
+      <Hero />
+      <Services />
+      <WhyRaccoons />
+      <HowItWorks />
+      <Pricing />
+      <ContactForm />
     </div>
   );
 };
